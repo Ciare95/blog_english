@@ -54,7 +54,7 @@ export default function LikesDislikesPage() {
             {/* Video Embed */}
             <div className="bg-gray-100 rounded-lg overflow-hidden mb-8">
               <video
-                src="/like_and_dislikes.mp4"
+                src="/Likes_and_deslikes.mp4"
                 width="100%"
                 height="400"
                 controls
