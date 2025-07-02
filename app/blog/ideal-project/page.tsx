@@ -55,7 +55,7 @@ export default function IdealProjectPage() {
             <div className="bg-gray-100 rounded-lg p-4 mb-8">
               <h3 className="text-lg font-semibold mb-2">Audio: My Ideal Project</h3>
               <audio controls className="w-full">
-                <source src="/ideal_project_audio.mp3" type="audio/mp3" />
+                <source src="/Ideal_project_audio.mp3" type="audio/mp3" />
                 Your browser does not support the audio element.
               </audio>
             </div>
