@@ -91,7 +91,7 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 text-center">
           <div className="mb-8">
             <Image
-              src="/images/foto.jpg"
+              src="/foto.jpg.jpg"
               alt="Hernán Cifuentes"
               width={150}
               height={150}

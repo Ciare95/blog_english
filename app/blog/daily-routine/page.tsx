@@ -53,16 +53,14 @@ export default function DailyRoutinePage() {
 
             {/* Video Embed */}
             <div className="bg-gray-100 rounded-lg overflow-hidden mb-8">
-              <iframe
-                src="https://soysena-my.sharepoint.com/personal/hernan_dcifuentes_soy_sena_edu_co/_layouts/15/embed.aspx?UniqueId=3f5f0343-7dbd-4d5f-90cb-09411b3b4edf"
+              <video
+                src="/daily_routine.mp4"
                 width="100%"
                 height="400"
-                frameBorder="0"
-                scrolling="no"
-                allowFullScreen
+                controls
                 title="My Daily Routine"
                 className="w-full aspect-video"
-              ></iframe>
+              ></video>
             </div>
 
             <div className="prose prose-lg max-w-none">

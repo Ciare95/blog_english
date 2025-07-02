@@ -53,16 +53,14 @@ export default function TechnologyDebatePage() {
 
             {/* Video Embed */}
             <div className="bg-gray-100 rounded-lg overflow-hidden mb-8">
-              <iframe
-                src="https://soysena-my.sharepoint.com/personal/hernan_dcifuentes_soy_sena_edu_co/_layouts/15/embed.aspx?UniqueId=b5a59987-9ea5-4d53-9e1d-523486fd8f2d"
+              <video
+                src="/Quick_debate.mp4"
                 width="100%"
                 height="400"
-                frameBorder="0"
-                scrolling="no"
-                allowFullScreen
+                controls
                 title="Technology Debate"
                 className="w-full aspect-video"
-              ></iframe>
+              ></video>
             </div>
 
             <div className="prose prose-lg max-w-none">

@@ -53,16 +53,14 @@ export default function LikesDislikesPage() {
 
             {/* Video Embed */}
             <div className="bg-gray-100 rounded-lg overflow-hidden mb-8">
-              <iframe
-                src="https://soysena-my.sharepoint.com/personal/hernan_dcifuentes_soy_sena_edu_co/_layouts/15/embed.aspx?UniqueId=6b757542-b67a-4541-a2da-63ebe8098680"
+              <video
+                src="/like_and_dislikes.mp4"
                 width="100%"
                 height="400"
-                frameBorder="0"
-                scrolling="no"
-                allowFullScreen
+                controls
                 title="What I Like and Dislike"
                 className="w-full aspect-video"
-              ></iframe>
+              ></video>
             </div>
 
             <div className="prose prose-lg max-w-none">
