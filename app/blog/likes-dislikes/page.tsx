@@ -53,14 +53,10 @@ export default function LikesDislikesPage() {
 
             {/* Video Embed */}
             <div className="bg-gray-100 rounded-lg overflow-hidden mb-8">
-              <video
-                src="/Likes_and_deslikes.mp4"
-                width="100%"
-                height="400"
-                controls
-                title="What I Like and Dislike"
-                className="w-full aspect-video"
-              ></video>
+            <video width="100%" height="400" controls className="w-full aspect-video">
+                <source src="/Likes_and_deslikes.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
             </div>
 
             <div className="prose prose-lg max-w-none">
