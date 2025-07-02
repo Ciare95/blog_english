@@ -52,15 +52,17 @@ export default function DailyRoutinePage() {
             </div>
 
             {/* Video Embed */}
-            <div className="bg-gray-100 rounded-lg overflow-hidden mb-8">
-              <video
-                src="/daily_routine.mp4"
+            <div className="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video">
+              <iframe
                 width="100%"
-                height="400"
-                controls
-                title="My Daily Routine"
-                className="w-full aspect-video"
-              ></video>
+                height="100%"
+                src="https://www.youtube.com/embed/aUcjKZAvfqo"
+                title="What I Like and Dislike"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
             </div>
 
             <div className="prose prose-lg max-w-none">

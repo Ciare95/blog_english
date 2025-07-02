@@ -51,17 +51,15 @@ export default function IdealProjectPage() {
               </p>
             </div>
 
-            {/* Video Embed */}
-            <div className="bg-gray-100 rounded-lg overflow-hidden mb-8">
-              <video
-                src="/Ideal_project.mp4"
-                width="100%"
-                height="400"
-                controls
-                title="My Ideal Project"
-                className="w-full aspect-video"
-              ></video>
+            {/* Audio Player */}
+            <div className="bg-gray-100 rounded-lg p-4 mb-8">
+              <h3 className="text-lg font-semibold mb-2">Audio: My Ideal Project</h3>
+              <audio controls className="w-full">
+                <source src="/ideal_project_audio.mp3" type="audio/mp3" />
+                Your browser does not support the audio element.
+              </audio>
             </div>
+
 
             <div className="prose prose-lg max-w-none">
               <h2 className="text-2xl font-bold text-gray-900 mb-4">Project Vision</h2>
