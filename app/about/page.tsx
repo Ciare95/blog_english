@@ -37,7 +37,7 @@ export default function AboutPage() {
           <div className="p-8">
             <div className="text-center mb-8">
               <Image
-                src="/images/foto.jpg"
+                src="/foto.jpg.jpg"
                 alt="Hernán Cifuentes"
                 width={200}
                 height={200}

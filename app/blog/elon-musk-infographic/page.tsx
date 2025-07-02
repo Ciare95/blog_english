@@ -56,7 +56,7 @@ export default function ElonMuskInfographicPage() {
             {/* Infographic Image */}
             <div className="bg-gray-50 rounded-lg p-8 text-center mb-8">
               <Image
-                src="/images/elon.jpg"
+                src="/elon.png"
                 alt="Elon Musk Infographic"
                 width={600}
                 height={800}
