@@ -154,13 +154,23 @@ export default function ADSOGlossaryPage() {
 
     const correctTerm = shuffledTerms[currentTermIndex]
     if (selectedTerm === correctTerm.term) {
-      setScore(score + 1)
+      const newScore = score + 1
+      setScore(newScore)
+      if (newScore >= 10) {
+        setIsGameOver(true)
+        return
+      }
     } else {
-      setLives(lives - 1)
+      const newLives = lives - 1
+      setLives(newLives)
+      if (newLives <= 0) {
+        setIsGameOver(true)
+        return
+      }
     }
 
     const nextTermIndex = currentTermIndex + 1
-    if (nextTermIndex < shuffledTerms.length && lives > 1) {
+    if (nextTermIndex < shuffledTerms.length) {
       setCurrentTermIndex(nextTermIndex)
       generateOptions(shuffledTerms[nextTermIndex])
     } else {
@@ -175,15 +185,25 @@ export default function ADSOGlossaryPage() {
 
   if (gameModeActive) {
     if (isGameOver) {
+      const isWinner = score >= 10
       return (
         <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center">
           <Card className="w-full max-w-md text-center p-8">
             <CardHeader>
-              <CardTitle className="text-3xl font-bold">Game Over</CardTitle>
+              <CardTitle className="text-3xl font-bold">{isWinner ? "Congratulations!" : "Game Over"}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-xl mb-4">Your final score is:</p>
-              <p className="text-5xl font-bold text-blue-600 mb-8">{score}</p>
+              {isWinner ? (
+                <div>
+                  <p className="text-xl mb-4">You've won the game!</p>
+                  <p className="text-5xl font-bold text-green-500 mb-8">{score}</p>
+                </div>
+              ) : (
+                <div>
+                  <p className="text-xl mb-4">Your final score is:</p>
+                  <p className="text-5xl font-bold text-blue-600 mb-8">{score}</p>
+                </div>
+              )}
               <Button onClick={startGame} className="bg-blue-600 hover:bg-blue-700">
                 Play Again
               </Button>
