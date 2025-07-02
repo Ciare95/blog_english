@@ -52,15 +52,17 @@ export default function TechnologyDebatePage() {
             </div>
 
             {/* Video Embed */}
-            <div className="bg-gray-100 rounded-lg overflow-hidden mb-8">
-              <video
-                src="/Quick_debate.mp4"
+            <div className="bg-gray-100 rounded-lg overflow-hidden mb-8 aspect-video">
+              <iframe
                 width="100%"
-                height="400"
-                controls
-                title="Technology Debate"
-                className="w-full aspect-video"
-              ></video>
+                height="100%"
+                src="https://www.youtube.com/embed/sPlwSRSGKNc"
+                title="What I Like and Dislike"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              ></iframe>
             </div>
 
             <div className="prose prose-lg max-w-none">
